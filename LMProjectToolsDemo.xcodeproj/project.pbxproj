@@ -15,6 +15,8 @@
 		461BCF321DBE0FEA00F9E688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BCF301DBE0FEA00F9E688 /* LaunchScreen.storyboard */; };
 		461BCF431DBE100B00F9E688 /* UIView+LMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BCF3C1DBE100B00F9E688 /* UIView+LMExtension.m */; };
 		461BCF441DBE100B00F9E688 /* LMJSONLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 461BCF3F1DBE100B00F9E688 /* LMJSONLog.m */; };
+		46A6D2D81DD4497C00FE3AAB /* NSMutableDictionary+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D2D71DD4497C00FE3AAB /* NSMutableDictionary+LMProjectTools.m */; };
+		46A6D2DC1DD44A8300FE3AAB /* NSMutableArray+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A6D2DB1DD44A8300FE3AAB /* NSMutableArray+LMProjectTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,11 @@
 		461BCF401DBE100B00F9E688 /* LMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLog.h; sourceTree = "<group>"; };
 		461BCF411DBE100B00F9E688 /* SimpleNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleNSLog.h; sourceTree = "<group>"; };
 		461BCF421DBE100B00F9E688 /* LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMProjectTools.h; sourceTree = "<group>"; };
+		46A6D2D61DD4497C00FE3AAB /* NSMutableDictionary+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+LMProjectTools.h"; sourceTree = "<group>"; };
+		46A6D2D71DD4497C00FE3AAB /* NSMutableDictionary+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+LMProjectTools.m"; sourceTree = "<group>"; };
+		46A6D2D91DD44A2800FE3AAB /* LMFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMFoundation.h; sourceTree = "<group>"; };
+		46A6D2DA1DD44A8300FE3AAB /* NSMutableArray+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LMProjectTools.h"; sourceTree = "<group>"; };
+		46A6D2DB1DD44A8300FE3AAB /* NSMutableArray+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LMProjectTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +99,7 @@
 		461BCF391DBE100B00F9E688 /* LMProjectTools */ = {
 			isa = PBXGroup;
 			children = (
+				46A6D2D51DD4491C00FE3AAB /* LMFoundation */,
 				461BCF3A1DBE100B00F9E688 /* LMExtensionView */,
 				461BCF3D1DBE100B00F9E688 /* LMLog */,
 				461BCF421DBE100B00F9E688 /* LMProjectTools.h */,
@@ -111,12 +119,24 @@
 		461BCF3D1DBE100B00F9E688 /* LMLog */ = {
 			isa = PBXGroup;
 			children = (
+				461BCF401DBE100B00F9E688 /* LMLog.h */,
 				461BCF3E1DBE100B00F9E688 /* LMJSONLog.h */,
 				461BCF3F1DBE100B00F9E688 /* LMJSONLog.m */,
-				461BCF401DBE100B00F9E688 /* LMLog.h */,
 				461BCF411DBE100B00F9E688 /* SimpleNSLog.h */,
 			);
 			path = LMLog;
+			sourceTree = "<group>";
+		};
+		46A6D2D51DD4491C00FE3AAB /* LMFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				46A6D2D91DD44A2800FE3AAB /* LMFoundation.h */,
+				46A6D2D61DD4497C00FE3AAB /* NSMutableDictionary+LMProjectTools.h */,
+				46A6D2D71DD4497C00FE3AAB /* NSMutableDictionary+LMProjectTools.m */,
+				46A6D2DA1DD44A8300FE3AAB /* NSMutableArray+LMProjectTools.h */,
+				46A6D2DB1DD44A8300FE3AAB /* NSMutableArray+LMProjectTools.m */,
+			);
+			path = LMFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A6D2D81DD4497C00FE3AAB /* NSMutableDictionary+LMProjectTools.m in Sources */,
+				46A6D2DC1DD44A8300FE3AAB /* NSMutableArray+LMProjectTools.m in Sources */,
 				461BCF2A1DBE0FEA00F9E688 /* ViewController.m in Sources */,
 				461BCF431DBE100B00F9E688 /* UIView+LMExtension.m in Sources */,
 				461BCF441DBE100B00F9E688 /* LMJSONLog.m in Sources */,
