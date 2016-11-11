@@ -11,4 +11,5 @@
 @interface NSMutableArray (LMProjectTools)
 
 - (void)lm_safeAddObject:(id)anObject;
+
 @end

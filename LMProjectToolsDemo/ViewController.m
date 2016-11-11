@@ -19,7 +19,18 @@
     [super viewDidLoad];
     UIButton *btn = [[UIButton alloc] init];
     btn.x = 100;
+    btn.y = 100;
+    btn.width = 80;
+    btn.height = 20;
+    btn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn];
+    NSLog(@"%f", btn.left);
     
+    UIImage *image = [UIImage imageWithColor:[UIColor greenColor]];
+    UIImageView *imageVeiw = [[UIImageView alloc] init];
+    imageVeiw.image = image;
+    imageVeiw.frame = CGRectMake(10, 10, 30, 30);
+    [self.view addSubview:imageVeiw];
 }
 
 

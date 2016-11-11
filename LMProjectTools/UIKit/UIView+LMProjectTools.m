@@ -4,9 +4,9 @@
 //  Created by 高翔 on 16/9/6.
 //
 
-#import "UIView+LMExtension.h"
+#import "UIView+LMProjectTools.h"
 
-@implementation UIView (LMExtension)
+@implementation UIView (LMProjectTools)
 
 - (void)setX:(CGFloat)x {
     CGRect frame = self.frame;
@@ -70,7 +70,7 @@
 
 - (void)setSize:(CGSize)size {
     CGRect frame = self.frame;
-    frame.size =size;
+    frame.size = size;
     self.frame = frame;
 }
 
@@ -86,6 +86,22 @@
 
 - (CGPoint)orign {
     return self.frame.origin;
+}
+
+- (CGFloat)left {
+    return self.x;
+}
+
+- (CGFloat)right {
+    return self.x + self.width;
+}
+
+- (CGFloat)top {
+    return self.y;
+}
+
+- (CGFloat)bottom {
+    return self.y + self.height;
 }
 
 @end
