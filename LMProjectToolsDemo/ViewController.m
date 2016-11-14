@@ -2,7 +2,7 @@
 //  ViewController.m
 //  LMProjectToolsDemo
 //
-//  Created by 高翔 on 16/10/24.
+//  Created by 流氓 on 16/10/24.
 //  Copyright © 2016年 流氓. All rights reserved.
 //
 
@@ -17,6 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /**
+     更新pod到远程
+     pod trunk push LMProjectTools.podspec
+     */
     UIButton *btn = [[UIButton alloc] init];
     btn.x = 100;
     btn.y = 100;
@@ -26,6 +31,7 @@
     [self.view addSubview:btn];
     NSLog(@"%f", btn.left);
     
+    NSURL *url = [@"www.baidu.com" URLValue];
     UIImage *image = [UIImage imageWithColor:[UIColor greenColor]];
     UIImageView *imageVeiw = [[UIImageView alloc] init];
     imageVeiw.image = image;

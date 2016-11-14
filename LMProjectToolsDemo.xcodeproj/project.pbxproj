@@ -20,6 +20,7 @@
 		463D65FD1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D65FC1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m */; };
 		463D66021DD9B4EB00AE4161 /* NSArray+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66011DD9B4EB00AE4161 /* NSArray+LMProjectTools.m */; };
 		463D66051DD9B58F00AE4161 /* NSObject+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */; };
+		463D66081DD9C84700AE4161 /* NSString+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66071DD9C84700AE4161 /* NSString+LMProjectTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,8 @@
 		463D66011DD9B4EB00AE4161 /* NSArray+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LMProjectTools.m"; sourceTree = "<group>"; };
 		463D66031DD9B58F00AE4161 /* NSObject+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LMProjectTools.h"; sourceTree = "<group>"; };
 		463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LMProjectTools.m"; sourceTree = "<group>"; };
+		463D66061DD9C84700AE4161 /* NSString+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LMProjectTools.h"; sourceTree = "<group>"; };
+		463D66071DD9C84700AE4161 /* NSString+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LMProjectTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				463D65FC1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m */,
 				4636DF4B1DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.h */,
 				4636DF4C1DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m */,
+				463D66061DD9C84700AE4161 /* NSString+LMProjectTools.h */,
+				463D66071DD9C84700AE4161 /* NSString+LMProjectTools.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				461BCF271DBE0FEA00F9E688 /* AppDelegate.m in Sources */,
 				461BCF241DBE0FEA00F9E688 /* main.m in Sources */,
 				4636DF541DD57FC3009E0830 /* UIView+LMProjectTools.m in Sources */,
+				463D66081DD9C84700AE4161 /* NSString+LMProjectTools.m in Sources */,
 				463D65FD1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

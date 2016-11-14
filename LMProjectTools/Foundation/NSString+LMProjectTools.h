@@ -1,5 +1,5 @@
 //
-//  NSDictionary+LMProjectTools.h
+//  NSString+LMProjectTools.h
 //  LMProjectToolsDemo
 //
 //  Created by 流氓 on 16/11/14.
@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (LMProjectTools)
+@interface NSString (LMProjectTools)
+
+- (NSURL *)URLValue;
 
 @end
