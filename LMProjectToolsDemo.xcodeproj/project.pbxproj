@@ -13,11 +13,13 @@
 		461BCF2D1DBE0FEA00F9E688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BCF2B1DBE0FEA00F9E688 /* Main.storyboard */; };
 		461BCF2F1DBE0FEA00F9E688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461BCF2E1DBE0FEA00F9E688 /* Assets.xcassets */; };
 		461BCF321DBE0FEA00F9E688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BCF301DBE0FEA00F9E688 /* LaunchScreen.storyboard */; };
-		4636DF511DD57FC3009E0830 /* LMJSONLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4636DF471DD57FC3009E0830 /* LMJSONLog.m */; };
 		4636DF521DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4636DF4A1DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m */; };
 		4636DF531DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4636DF4C1DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m */; };
 		4636DF541DD57FC3009E0830 /* UIView+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4636DF501DD57FC3009E0830 /* UIView+LMProjectTools.m */; };
 		4636DF5E1DD5BA2A009E0830 /* UIImage+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4636DF5D1DD5BA2A009E0830 /* UIImage+LMProjectTools.m */; };
+		463D65FD1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D65FC1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m */; };
+		463D66021DD9B4EB00AE4161 /* NSArray+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66011DD9B4EB00AE4161 /* NSArray+LMProjectTools.m */; };
+		463D66051DD9B58F00AE4161 /* NSObject+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,19 +35,22 @@
 		461BCF331DBE0FEA00F9E688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		461BCF421DBE100B00F9E688 /* LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMProjectTools.h; sourceTree = "<group>"; };
 		4636DF451DD57FC3009E0830 /* LMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMFoundation.h; sourceTree = "<group>"; };
-		4636DF461DD57FC3009E0830 /* LMJSONLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJSONLog.h; sourceTree = "<group>"; };
-		4636DF471DD57FC3009E0830 /* LMJSONLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJSONLog.m; sourceTree = "<group>"; };
-		4636DF481DD57FC3009E0830 /* LMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLog.h; sourceTree = "<group>"; };
 		4636DF491DD57FC3009E0830 /* NSMutableArray+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LMProjectTools.h"; sourceTree = "<group>"; };
 		4636DF4A1DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LMProjectTools.m"; sourceTree = "<group>"; };
 		4636DF4B1DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+LMProjectTools.h"; sourceTree = "<group>"; };
 		4636DF4C1DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+LMProjectTools.m"; sourceTree = "<group>"; };
-		4636DF4D1DD57FC3009E0830 /* SimpleNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleNSLog.h; sourceTree = "<group>"; };
+		4636DF4D1DD57FC3009E0830 /* LMNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMNSLog.h; sourceTree = "<group>"; };
 		4636DF4F1DD57FC3009E0830 /* UIView+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LMProjectTools.h"; sourceTree = "<group>"; };
 		4636DF501DD57FC3009E0830 /* UIView+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LMProjectTools.m"; sourceTree = "<group>"; };
 		4636DF5C1DD5BA2A009E0830 /* UIImage+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LMProjectTools.h"; sourceTree = "<group>"; };
 		4636DF5D1DD5BA2A009E0830 /* UIImage+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LMProjectTools.m"; sourceTree = "<group>"; };
 		4636DF5F1DD5BAE5009E0830 /* LMUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMUIKit.h; sourceTree = "<group>"; };
+		463D65FB1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LMProjectTools.h"; sourceTree = "<group>"; };
+		463D65FC1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LMProjectTools.m"; sourceTree = "<group>"; };
+		463D66001DD9B4EB00AE4161 /* NSArray+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LMProjectTools.h"; sourceTree = "<group>"; };
+		463D66011DD9B4EB00AE4161 /* NSArray+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LMProjectTools.m"; sourceTree = "<group>"; };
+		463D66031DD9B58F00AE4161 /* NSObject+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LMProjectTools.h"; sourceTree = "<group>"; };
+		463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LMProjectTools.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +118,16 @@
 		4636DF441DD57FC3009E0830 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				4636DF481DD57FC3009E0830 /* LMLog.h */,
-				4636DF4D1DD57FC3009E0830 /* SimpleNSLog.h */,
-				4636DF461DD57FC3009E0830 /* LMJSONLog.h */,
-				4636DF471DD57FC3009E0830 /* LMJSONLog.m */,
 				4636DF451DD57FC3009E0830 /* LMFoundation.h */,
+				4636DF4D1DD57FC3009E0830 /* LMNSLog.h */,
+				463D66031DD9B58F00AE4161 /* NSObject+LMProjectTools.h */,
+				463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */,
+				463D66001DD9B4EB00AE4161 /* NSArray+LMProjectTools.h */,
+				463D66011DD9B4EB00AE4161 /* NSArray+LMProjectTools.m */,
 				4636DF491DD57FC3009E0830 /* NSMutableArray+LMProjectTools.h */,
 				4636DF4A1DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m */,
+				463D65FB1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.h */,
+				463D65FC1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m */,
 				4636DF4B1DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.h */,
 				4636DF4C1DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m */,
 			);
@@ -213,12 +221,14 @@
 			files = (
 				4636DF5E1DD5BA2A009E0830 /* UIImage+LMProjectTools.m in Sources */,
 				4636DF531DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m in Sources */,
+				463D66051DD9B58F00AE4161 /* NSObject+LMProjectTools.m in Sources */,
+				463D66021DD9B4EB00AE4161 /* NSArray+LMProjectTools.m in Sources */,
 				461BCF2A1DBE0FEA00F9E688 /* ViewController.m in Sources */,
 				4636DF521DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m in Sources */,
 				461BCF271DBE0FEA00F9E688 /* AppDelegate.m in Sources */,
 				461BCF241DBE0FEA00F9E688 /* main.m in Sources */,
-				4636DF511DD57FC3009E0830 /* LMJSONLog.m in Sources */,
 				4636DF541DD57FC3009E0830 /* UIView+LMProjectTools.m in Sources */,
+				463D65FD1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +349,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9479286Y6M;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LMProjectToolsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LM.LMProjectToolsDemo;
@@ -352,6 +365,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9479286Y6M;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LMProjectToolsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LM.LMProjectToolsDemo;

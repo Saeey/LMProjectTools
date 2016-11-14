@@ -13,8 +13,9 @@
 - (void)lm_safeSetObject:(id)anObject forKey:(id<NSCopying>)aKey {
     if (anObject == nil) {
         [self setObject:@"" forKey:aKey];
+    } else {
+        [self setObject:anObject forKey:aKey];
     }
-    [self setObject:anObject forKey:aKey];
 }
 
 @end

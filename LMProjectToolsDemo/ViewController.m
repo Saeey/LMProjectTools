@@ -31,6 +31,28 @@
     imageVeiw.image = image;
     imageVeiw.frame = CGRectMake(10, 10, 30, 30);
     [self.view addSubview:imageVeiw];
+    
+    
+    NSMutableDictionary *maDict = [NSMutableDictionary dictionary];
+    [maDict lm_safeSetObject:@"aaaa" forKey:@"aaa"];
+    [maDict lm_safeSetObject:@"aaaa" forKey:@"bbb"];
+    [maDict lm_safeSetObject:@"aaaa" forKey:@"ccc"];
+    
+    NSMutableDictionary *mbDict = [NSMutableDictionary dictionary];
+    [mbDict lm_safeSetObject:maDict forKey:@"aaa"];
+    [mbDict lm_safeSetObject:nil forKey:@"bbb"];
+    [mbDict lm_safeSetObject:maDict forKey:@"ccc"];
+    
+    [mbDict JSONLog];
+    
+    NSMutableArray *array = [NSMutableArray array];
+    [array lm_safeAddObject:nil];
+    [array lm_safeAddObject:mbDict];
+    [array lm_safeAddObject:@"a11"];
+    [array lm_safeAddObject:@"a1asd"];
+    [array lm_safeAddObject:@"a1ad"];
+    [array lm_safeAddObject:@"a1sadas"];
+    [array JSONLog];
 }
 
 

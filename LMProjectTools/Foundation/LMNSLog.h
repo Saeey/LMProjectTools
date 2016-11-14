@@ -21,7 +21,7 @@
 
 #define CLOSE_LOG 0
 
-#if CLOSE_LOG
+#if CLOSE_LOG || !DEBUG
     #define NSLog(fmt, ...)
 #else
     #define NSLog(fmt, ...) _NSLog((@"%@:%d %s " fmt), THIS_FILE, __LINE__, __FUNCTION__, ##__VA_ARGS__)
