@@ -10,6 +10,10 @@
 
 @implementation NSObject (LMProjectTools)
 
+- (BOOL)isValid {
+    return !(self == nil || [self isKindOfClass:[NSNull class]]);
+}
+
 - (void)JSONLog {
     NSString *log = @"\nLMJSONLog:\n";
     if (self == nil) {

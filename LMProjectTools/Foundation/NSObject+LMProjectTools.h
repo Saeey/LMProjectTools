@@ -10,6 +10,7 @@
 
 @interface NSObject (LMProjectTools)
 
+- (BOOL)isValid;
 - (void)JSONLog;
 
 @end
