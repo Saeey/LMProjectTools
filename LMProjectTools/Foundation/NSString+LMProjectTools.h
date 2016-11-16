@@ -10,6 +10,25 @@
 
 @interface NSString (LMProjectTools)
 
+/**
+ 返回URLValue
+
+ @return URL格式
+ */
 - (NSURL *)URLValue;
+
+/**
+ 根据正则判断是否为有效手机号
+
+ @return 如果是正确手机号返回YES
+ */
+- (BOOL)isPhoneNumber;
+
+/**
+ 正则匹配用户身份证号15或18位
+
+ @return 如果是正确身份证号返回YES
+ */
+- (BOOL)isUserIdCard;
 
 @end

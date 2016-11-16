@@ -22,11 +22,11 @@
      更新pod到远程
      pod trunk push LMProjectTools.podspec
      */
-    UIButton *btn = [[UIButton alloc] init];
-    btn.x = 100;
-    btn.y = 100;
-    btn.width = 80;
-    btn.height = 20;
+    UIButton *btn   = [[UIButton alloc] init];
+    btn.x           = 100;
+    btn.y           = 100;
+    btn.width       = 80;
+    btn.height      = 20;
     btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
     NSLog(@"%f", btn.left);
@@ -42,7 +42,8 @@
     NSMutableDictionary *maDict = [NSMutableDictionary dictionary];
     [maDict lm_safeSetObject:@"aaaa" forKey:@"aaa"];
     [maDict lm_safeSetObject:@"aaaa" forKey:@"bbb"];
-    [maDict lm_safeSetObject:@"aaaa" forKey:@"ccc"];
+    [maDict lm_safeSetObject:nil forKey:@"ccc"];
+    [maDict setObject:[NSNull null] forKey:@"asdsadas"];
     
     NSMutableDictionary *mbDict = [NSMutableDictionary dictionary];
     [mbDict lm_safeSetObject:maDict forKey:@"aaa"];
@@ -59,6 +60,9 @@
     [array lm_safeAddObject:@"a1ad"];
     [array lm_safeAddObject:@"a1sadas"];
     [array JSONLog];
+    
+    NSLog(@"是否是手机号？ %d", [@"15012312312" isPhoneNumber]);
+    NSLog(@"是否是身份证号？ %d", [@"123123199912121111" isUserIdCard]);
 }
 
 

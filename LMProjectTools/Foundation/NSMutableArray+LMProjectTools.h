@@ -10,6 +10,11 @@
 
 @interface NSMutableArray (LMProjectTools)
 
+/**
+ 安全AddObject，如果anObject为nil，则会插入\@""
+
+ @param anObject anObject
+ */
 - (void)lm_safeAddObject:(id)anObject;
 
 @end

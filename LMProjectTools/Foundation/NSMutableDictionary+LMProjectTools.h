@@ -11,6 +11,12 @@
 
 @interface NSMutableDictionary (LMProjectTools)
 
+/**
+ 安全SetObject，如果anObject为nil，则会插入\@""
+
+ @param anObject object
+ @param aKey key
+ */
 - (void)lm_safeSetObject:(id _Nonnull)anObject forKey:(id<NSCopying> _Nonnull)aKey;
 
 @end
