@@ -7,6 +7,7 @@
 //
 
 #import "NSString+LMProjectTools.h"
+#import "LMNSLog.h"
 
 @implementation NSString (LMProjectTools)
 
@@ -26,6 +27,16 @@
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
     BOOL isMatch = [pred evaluateWithObject:self];
     return isMatch;
+}
+
+- (BOOL)isValid {
+    if (self == nil
+        ||[self isKindOfClass:[NSNull class]]
+        ||[self isEqualToString:@""]) {
+        return NO;
+    } else {
+        return YES;
+    }
 }
 
 @end

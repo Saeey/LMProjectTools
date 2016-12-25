@@ -17,4 +17,6 @@
  */
 - (void)lm_safeAddObject:(id)anObject;
 
+- (BOOL)lm_haveObject:(id)object;
+
 @end

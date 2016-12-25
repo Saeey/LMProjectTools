@@ -38,3 +38,30 @@
 @property (nonatomic, assign, readonly) CGFloat bottom;
 
 @end
+
+CG_INLINE CGSize
+CGSizeGetRightHeight(NSString *string, UIFont *font, CGFloat width)
+{
+    UILabel *label      = [[UILabel alloc] init];
+    label.text          = string;
+    label.numberOfLines = 0;
+    label.font          = font;
+    label.width         = width;
+    [label sizeToFit];
+    label.width = width;
+    return label.size;
+}
+
+CG_INLINE CGSize
+CGSizeGetRightWidth(NSString *string, UIFont *font, CGFloat width)
+{
+    UILabel *label      = [[UILabel alloc] init];
+    label.text          = string;
+    label.numberOfLines = 0;
+    label.font          = font;
+    label.width         = CGFLOAT_MAX;
+    [label sizeToFit];
+    
+    label.width = label.width < width?label.width:width;
+    return label.size;
+}
