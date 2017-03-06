@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #import "LMProjectTools.h"
+#import "TestCell1.h"
+#import "TestHead1.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -32,6 +34,7 @@
     NSLog(@"%f", btn.left);
     
     NSURL *url = [@"www.baidu.com" URLValue];
+    NSLog(@"%@", url);
     UIImage *image = [UIImage imageWithColor:[UIColor greenColor]];
     UIImageView *imageVeiw = [[UIImageView alloc] init];
     imageVeiw.image = image;
@@ -63,8 +66,42 @@
     
     NSLog(@"是否是手机号？ %d", [@"15012312312" isPhoneNumber]);
     NSLog(@"是否是身份证号？ %d", [@"123123199912121111" isUserIdCard]);
+    [self addTableView];
 }
 
+- (void)addTableView {
+    UITableView *tableView = [[UITableView alloc] init];
+    tableView.frame = CGRectMake(0, 0, 200, 300);
+    [self.view addSubview:tableView];
+    
+    tableView.delegate = self;
+    tableView.dataSource = self;
+//    [tableView registerNib:[UINib nibWithNibName:@"TestCell1" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TestCell1Identifier"];
+    [tableView lm_registerCellNib:[TestCell1 class]];
+//    [tableView registerNib:[UINib nibWithNibName:@"TestHead1" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"TestHead1Identifier"];
+    [tableView lm_registerHeaderFooterNib:[TestHead1 class]];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    TestCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"TestCell1Identifier"];
+    TestCell1 *cell = [tableView lm_dequeueReusableCellWithClass:[TestCell1 class]];
+    cell.titleLabel.text = [NSString stringWithFormat:@"hangshu = %ld", (long)indexPath.row];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 20;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    TestHead1 *head = [tableView lm_dequeueReusableHeaderFooterViewWithClass:[TestHead1 class]];
+    head.titleLabel.text = [NSString stringWithFormat:@"haha 我是第 %ld 组", (long)section];
+    return head;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

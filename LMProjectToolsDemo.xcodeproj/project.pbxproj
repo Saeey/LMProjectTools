@@ -13,6 +13,12 @@
 		461BCF2D1DBE0FEA00F9E688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BCF2B1DBE0FEA00F9E688 /* Main.storyboard */; };
 		461BCF2F1DBE0FEA00F9E688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461BCF2E1DBE0FEA00F9E688 /* Assets.xcassets */; };
 		461BCF321DBE0FEA00F9E688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461BCF301DBE0FEA00F9E688 /* LaunchScreen.storyboard */; };
+		4620E71C1E6CFEA0009595C1 /* UITableView+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4620E71B1E6CFEA0009595C1 /* UITableView+LMProjectTools.m */; };
+		4620E7201E6D0264009595C1 /* TestCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4620E71E1E6D0264009595C1 /* TestCell1.m */; };
+		4620E7211E6D0264009595C1 /* TestCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4620E71F1E6D0264009595C1 /* TestCell1.xib */; };
+		4620E7241E6D0F47009595C1 /* TestHead1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4620E7231E6D0F47009595C1 /* TestHead1.m */; };
+		4620E7261E6D0F56009595C1 /* TestHead1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4620E7251E6D0F56009595C1 /* TestHead1.xib */; };
+		4620E72C1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4620E72B1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m */; };
 		4636DF521DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4636DF4A1DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m */; };
 		4636DF531DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4636DF4C1DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m */; };
 		4636DF541DD57FC3009E0830 /* UIView+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4636DF501DD57FC3009E0830 /* UIView+LMProjectTools.m */; };
@@ -35,6 +41,16 @@
 		461BCF311DBE0FEA00F9E688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		461BCF331DBE0FEA00F9E688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		461BCF421DBE100B00F9E688 /* LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMProjectTools.h; sourceTree = "<group>"; };
+		4620E71A1E6CFEA0009595C1 /* UITableView+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+LMProjectTools.h"; sourceTree = "<group>"; };
+		4620E71B1E6CFEA0009595C1 /* UITableView+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LMProjectTools.m"; sourceTree = "<group>"; };
+		4620E71D1E6D0264009595C1 /* TestCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell1.h; sourceTree = "<group>"; };
+		4620E71E1E6D0264009595C1 /* TestCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell1.m; sourceTree = "<group>"; };
+		4620E71F1E6D0264009595C1 /* TestCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell1.xib; sourceTree = "<group>"; };
+		4620E7221E6D0F47009595C1 /* TestHead1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHead1.h; sourceTree = "<group>"; };
+		4620E7231E6D0F47009595C1 /* TestHead1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHead1.m; sourceTree = "<group>"; };
+		4620E7251E6D0F56009595C1 /* TestHead1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestHead1.xib; sourceTree = "<group>"; };
+		4620E72A1E6D10C8009595C1 /* UICollectionView+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+LMProjectTools.h"; sourceTree = "<group>"; };
+		4620E72B1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+LMProjectTools.m"; sourceTree = "<group>"; };
 		4636DF451DD57FC3009E0830 /* LMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMFoundation.h; sourceTree = "<group>"; };
 		4636DF491DD57FC3009E0830 /* NSMutableArray+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LMProjectTools.h"; sourceTree = "<group>"; };
 		4636DF4A1DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+LMProjectTools.m"; sourceTree = "<group>"; };
@@ -91,11 +107,17 @@
 				461BCF261DBE0FEA00F9E688 /* AppDelegate.m */,
 				461BCF281DBE0FEA00F9E688 /* ViewController.h */,
 				461BCF291DBE0FEA00F9E688 /* ViewController.m */,
+				4620E71D1E6D0264009595C1 /* TestCell1.h */,
+				4620E71E1E6D0264009595C1 /* TestCell1.m */,
+				4620E71F1E6D0264009595C1 /* TestCell1.xib */,
 				461BCF2B1DBE0FEA00F9E688 /* Main.storyboard */,
 				461BCF2E1DBE0FEA00F9E688 /* Assets.xcassets */,
 				461BCF301DBE0FEA00F9E688 /* LaunchScreen.storyboard */,
 				461BCF331DBE0FEA00F9E688 /* Info.plist */,
 				461BCF221DBE0FEA00F9E688 /* Supporting Files */,
+				4620E7221E6D0F47009595C1 /* TestHead1.h */,
+				4620E7231E6D0F47009595C1 /* TestHead1.m */,
+				4620E7251E6D0F56009595C1 /* TestHead1.xib */,
 			);
 			path = LMProjectToolsDemo;
 			sourceTree = "<group>";
@@ -147,6 +169,10 @@
 				4636DF501DD57FC3009E0830 /* UIView+LMProjectTools.m */,
 				4636DF5C1DD5BA2A009E0830 /* UIImage+LMProjectTools.h */,
 				4636DF5D1DD5BA2A009E0830 /* UIImage+LMProjectTools.m */,
+				4620E71A1E6CFEA0009595C1 /* UITableView+LMProjectTools.h */,
+				4620E71B1E6CFEA0009595C1 /* UITableView+LMProjectTools.m */,
+				4620E72A1E6D10C8009595C1 /* UICollectionView+LMProjectTools.h */,
+				4620E72B1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -177,7 +203,7 @@
 		461BCF171DBE0FEA00F9E688 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "流氓";
 				TargetAttributes = {
 					461BCF1E1DBE0FEA00F9E688 = {
@@ -213,7 +239,9 @@
 			files = (
 				461BCF321DBE0FEA00F9E688 /* LaunchScreen.storyboard in Resources */,
 				461BCF2F1DBE0FEA00F9E688 /* Assets.xcassets in Resources */,
+				4620E7261E6D0F56009595C1 /* TestHead1.xib in Resources */,
 				461BCF2D1DBE0FEA00F9E688 /* Main.storyboard in Resources */,
+				4620E7211E6D0264009595C1 /* TestCell1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +260,13 @@
 				4636DF521DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m in Sources */,
 				461BCF271DBE0FEA00F9E688 /* AppDelegate.m in Sources */,
 				461BCF241DBE0FEA00F9E688 /* main.m in Sources */,
+				4620E71C1E6CFEA0009595C1 /* UITableView+LMProjectTools.m in Sources */,
+				4620E72C1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m in Sources */,
 				4636DF541DD57FC3009E0830 /* UIView+LMProjectTools.m in Sources */,
 				463D66081DD9C84700AE4161 /* NSString+LMProjectTools.m in Sources */,
+				4620E7241E6D0F47009595C1 /* TestHead1.m in Sources */,
 				463D65FD1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m in Sources */,
+				4620E7201E6D0264009595C1 /* TestCell1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +310,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -300,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,6 +359,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -342,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,13 +388,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 604493843@qq.com (6NH4524XR6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9479286Y6M;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LMProjectToolsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LM.LMProjectToolsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.visionet.LM.LMProjectToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -370,13 +407,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 604493843@qq.com (6NH4524XR6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9479286Y6M;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LMProjectToolsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LM.LMProjectToolsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.visionet.LM.LMProjectToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

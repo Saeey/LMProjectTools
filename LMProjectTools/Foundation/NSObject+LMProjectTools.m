@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+LMProjectTools.h"
+#import "LMNSLog.h"
 
 @implementation NSObject (LMProjectTools)
 
