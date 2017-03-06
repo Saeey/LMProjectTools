@@ -18,4 +18,9 @@
     }
 }
 
+- (BOOL)lm_haveObject:(id)object {
+    NSUInteger index = [self indexOfObject:object];
+    return (index != NSNotFound);
+}
+
 @end

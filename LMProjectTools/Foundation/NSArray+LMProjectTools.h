@@ -10,4 +10,6 @@
 
 @interface NSArray (LMProjectTools)
 
+- (BOOL)lm_haveObject:(id)object;
+
 @end

@@ -21,6 +21,7 @@
     [super viewDidLoad];
     
     /**
+     
      更新pod到远程
      pod trunk push LMProjectTools.podspec
      */
@@ -33,6 +34,10 @@
     [self.view addSubview:btn];
     NSLog(@"%f", btn.left);
     
+    [btn setTitle:@"adfnhisfhbhsbdbsdbfdsdfjs" forState:UIControlStateNormal];
+    btn.size = CGSizeGetRightWidth(btn.titleLabel.text, btn.titleLabel.font, CGFLOAT_MAX);
+
+    
     NSURL *url = [@"www.baidu.com" URLValue];
     NSLog(@"%@", url);
     UIImage *image = [UIImage imageWithColor:[UIColor greenColor]];
@@ -40,8 +45,7 @@
     imageVeiw.image = image;
     imageVeiw.frame = CGRectMake(10, 10, 30, 30);
     [self.view addSubview:imageVeiw];
-    
-    
+
     NSMutableDictionary *maDict = [NSMutableDictionary dictionary];
     [maDict lm_safeSetObject:@"aaaa" forKey:@"aaa"];
     [maDict lm_safeSetObject:@"aaaa" forKey:@"bbb"];

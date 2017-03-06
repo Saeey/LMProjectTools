@@ -31,4 +31,11 @@
  */
 - (BOOL)isUserIdCard;
 
+/**
+ 校验是否有效 有效则返回YES, nil 或 [NSNull null] 或 @"" 则返回NO
+ 
+ @return 是否有效
+ */
+- (BOOL)isValid;
+
 @end
