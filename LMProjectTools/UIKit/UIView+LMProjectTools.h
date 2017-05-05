@@ -53,7 +53,7 @@ CGSizeGetRightHeight(NSString *string, UIFont *font, CGFloat width)
 }
 
 CG_INLINE CGSize
-CGSizeGetRightWidth(NSString *string, UIFont *font, CGFloat width)
+CGSizeGetRightWidth(NSString *string, UIFont *font, CGFloat maxWidth)
 {
     UILabel *label      = [[UILabel alloc] init];
     label.text          = string;
@@ -62,6 +62,6 @@ CGSizeGetRightWidth(NSString *string, UIFont *font, CGFloat width)
     label.width         = CGFLOAT_MAX;
     [label sizeToFit];
     
-    label.width = label.width < width?label.width:width;
+    label.width = label.width < maxWidth?label.width:maxWidth;
     return label.size;
 }

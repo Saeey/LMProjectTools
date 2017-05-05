@@ -22,4 +22,13 @@
  */
 - (void)JSONLog;
 
+/**
+ 根据block返回SEL
+ 可以用在addTarget: action: forControlEvents:
+
+ @param block block
+ @return SEL
+ */
+- (SEL)lm_selectorFromBlock:(void (^)(void))block;
+
 @end

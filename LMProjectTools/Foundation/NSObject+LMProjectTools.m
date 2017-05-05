@@ -8,6 +8,7 @@
 
 #import "NSObject+LMProjectTools.h"
 #import "LMNSLog.h"
+#import <objc/runtime.h>
 
 @implementation NSObject (LMProjectTools)
 
@@ -32,6 +33,21 @@
                                                           options:NSJSONWritingPrettyPrinted
                                                             error:&parseError];
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
+
+- (SEL)lm_selectorFromBlock:(void (^)(void))block {
+    NSString *selName = [NSString stringWithFormat:@"block%p", block];
+    SEL sel = NSSelectorFromString(selName);
+    class_addMethod([self class], sel, (IMP)selectImp, "v@:");
+    objc_setAssociatedObject(self, sel, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    return sel;
+}
+
+void selectImp(id self,SEL _cmd) {
+    void (^block)(void) = objc_getAssociatedObject(self, _cmd);
+    if (block) {
+        block();
+    }
 }
 
 @end

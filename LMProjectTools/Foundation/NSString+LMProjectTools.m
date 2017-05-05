@@ -39,4 +39,19 @@
     }
 }
 
+- (NSDictionary *)JSONDictionary {
+    if (self && self.length != 0) {
+        NSError *error;
+        NSData *jsonData = [self dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&error];
+        
+        if (error) {
+            NSLog(@"json解析失败：%@", error);
+            return nil;
+        }
+        return jsonDict;
+    }
+    return nil;
+}
+
 @end

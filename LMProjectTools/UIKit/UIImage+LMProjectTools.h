@@ -18,4 +18,16 @@
  */
 + (UIImage *)imageWithColor:(UIColor *)color;
 
+/**
+ 对image增加水印
+ 
+ @param text 需要增加水印的文字
+ @param rect 增加在的位置
+ @return image
+ */
+- (UIImage *)watermarkImage:(NSString *)text
+                       rect:(CGRect)rect
+                       font:(UIFont *)font
+                      color:(UIColor *)color;
+
 @end

@@ -10,6 +10,7 @@
 #import "LMProjectTools.h"
 #import "TestCell1.h"
 #import "TestHead1.h"
+#import "LMLoadXibViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -29,13 +30,20 @@
     btn.x           = 100;
     btn.y           = 100;
     btn.width       = 80;
-    btn.height      = 20;
+    btn.height      = 80;
     btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
     NSLog(@"%f", btn.left);
+    [btn addTarget:self action:[self lm_selectorFromBlock:^{
+        NSLog(@"");
+    }] forControlEvents:UIControlEventTouchUpInside];
+    
     
     [btn setTitle:@"adfnhisfhbhsbdbsdbfdsdfjs" forState:UIControlStateNormal];
-    btn.size = CGSizeGetRightWidth(btn.titleLabel.text, btn.titleLabel.font, CGFLOAT_MAX);
+    
+    btn.size = CGSizeGetRightHeight(btn.titleLabel.text, btn.titleLabel.font, 100);
+//    btn.size = CGSizeGetRightWidth(btn.titleLabel.text, btn.titleLabel.font, 1000);
+    
 
     
     NSURL *url = [@"www.baidu.com" URLValue];
@@ -75,26 +83,44 @@
 
 - (void)addTableView {
     UITableView *tableView = [[UITableView alloc] init];
-    tableView.frame = CGRectMake(0, 0, 200, 300);
+    tableView.tableHeaderView = [[UIView alloc] init];
+    tableView.frame = CGRectMake(0, 64, self.view.width, self.view.height - 64);
     [self.view addSubview:tableView];
     
     tableView.delegate = self;
     tableView.dataSource = self;
+    // old
 //    [tableView registerNib:[UINib nibWithNibName:@"TestCell1" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"TestCell1Identifier"];
-    [tableView lm_registerCellNib:[TestCell1 class]];
 //    [tableView registerNib:[UINib nibWithNibName:@"TestHead1" bundle:[NSBundle mainBundle]] forHeaderFooterViewReuseIdentifier:@"TestHead1Identifier"];
+    
+    // new
+    [tableView lm_registerCellNib:[TestCell1 class]];
     [tableView lm_registerHeaderFooterNib:[TestHead1 class]];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // old
 //    TestCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"TestCell1Identifier"];
+    
+    // new
     TestCell1 *cell = [tableView lm_dequeueReusableCellWithClass:[TestCell1 class]];
-    cell.titleLabel.text = [NSString stringWithFormat:@"hangshu = %ld", (long)indexPath.row];
+    // 不想复用的时候
+//    TestCell1 *cell = [[TestCell1 alloc] init];
+    
+    cell.titleLabel.text = [NSString stringWithFormat:@"哈哈我是第%ld行", (long)indexPath.row];
+    switch (indexPath.row) {
+        case 0:
+            cell.titleLabel.text = @"去看看LMAutoXibView";
+            break;
+            
+        default:
+            break;
+    }
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 20;
+    return 40;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -105,6 +131,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 10;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView cellForRowAtIndexPath:indexPath].selected = NO;
+    switch (indexPath.row) {
+        case 0:{
+            LMLoadXibViewController *loadXibVC = [[LMLoadXibViewController alloc] init];
+            [self.navigationController pushViewController:loadXibVC animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

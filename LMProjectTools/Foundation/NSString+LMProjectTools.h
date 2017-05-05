@@ -38,4 +38,11 @@
  */
 - (BOOL)isValid;
 
+/**
+ JSON字符串转Dictionary字典
+
+ @return Dictionary字典
+ */
+- (NSDictionary *)JSONDictionary;
+
 @end

@@ -27,6 +27,14 @@
 		463D66021DD9B4EB00AE4161 /* NSArray+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66011DD9B4EB00AE4161 /* NSArray+LMProjectTools.m */; };
 		463D66051DD9B58F00AE4161 /* NSObject+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */; };
 		463D66081DD9C84700AE4161 /* NSString+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66071DD9C84700AE4161 /* NSString+LMProjectTools.m */; };
+		46E375361E9E291700AA84A7 /* LMAutoLoadXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E375321E9E291700AA84A7 /* LMAutoLoadXibView.m */; };
+		46E375371E9E291700AA84A7 /* LMLoadXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E375351E9E291700AA84A7 /* LMLoadXibView.m */; };
+		46E3753A1E9E295100AA84A7 /* TestLoadXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E375391E9E295100AA84A7 /* TestLoadXibView.m */; };
+		46E3753C1E9E296300AA84A7 /* TestLoadXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E3753B1E9E296300AA84A7 /* TestLoadXibView.xib */; };
+		46E3753F1E9E2A1C00AA84A7 /* TestAutoLoadXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E3753E1E9E2A1C00AA84A7 /* TestAutoLoadXibView.m */; };
+		46E375411E9E2A2400AA84A7 /* TestAutoLoadXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E375401E9E2A2400AA84A7 /* TestAutoLoadXibView.xib */; };
+		46E375471E9E2C3B00AA84A7 /* LMLoadXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E375451E9E2C3B00AA84A7 /* LMLoadXibViewController.m */; };
+		46E375481E9E2C3B00AA84A7 /* LMLoadXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E375461E9E2C3B00AA84A7 /* LMLoadXibViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +42,8 @@
 		461BCF231DBE0FEA00F9E688 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		461BCF251DBE0FEA00F9E688 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		461BCF261DBE0FEA00F9E688 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		461BCF281DBE0FEA00F9E688 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		461BCF291DBE0FEA00F9E688 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		461BCF281DBE0FEA00F9E688 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		461BCF291DBE0FEA00F9E688 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		461BCF2C1DBE0FEA00F9E688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		461BCF2E1DBE0FEA00F9E688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		461BCF311DBE0FEA00F9E688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,12 +51,12 @@
 		461BCF421DBE100B00F9E688 /* LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMProjectTools.h; sourceTree = "<group>"; };
 		4620E71A1E6CFEA0009595C1 /* UITableView+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+LMProjectTools.h"; sourceTree = "<group>"; };
 		4620E71B1E6CFEA0009595C1 /* UITableView+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LMProjectTools.m"; sourceTree = "<group>"; };
-		4620E71D1E6D0264009595C1 /* TestCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell1.h; sourceTree = "<group>"; };
-		4620E71E1E6D0264009595C1 /* TestCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell1.m; sourceTree = "<group>"; };
-		4620E71F1E6D0264009595C1 /* TestCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell1.xib; sourceTree = "<group>"; };
-		4620E7221E6D0F47009595C1 /* TestHead1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHead1.h; sourceTree = "<group>"; };
-		4620E7231E6D0F47009595C1 /* TestHead1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHead1.m; sourceTree = "<group>"; };
-		4620E7251E6D0F56009595C1 /* TestHead1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestHead1.xib; sourceTree = "<group>"; };
+		4620E71D1E6D0264009595C1 /* TestCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestCell1.h; path = ../TestCell1.h; sourceTree = "<group>"; };
+		4620E71E1E6D0264009595C1 /* TestCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestCell1.m; path = ../TestCell1.m; sourceTree = "<group>"; };
+		4620E71F1E6D0264009595C1 /* TestCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestCell1.xib; path = ../TestCell1.xib; sourceTree = "<group>"; };
+		4620E7221E6D0F47009595C1 /* TestHead1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestHead1.h; path = ../TestHead1.h; sourceTree = "<group>"; };
+		4620E7231E6D0F47009595C1 /* TestHead1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestHead1.m; path = ../TestHead1.m; sourceTree = "<group>"; };
+		4620E7251E6D0F56009595C1 /* TestHead1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestHead1.xib; path = ../TestHead1.xib; sourceTree = "<group>"; };
 		4620E72A1E6D10C8009595C1 /* UICollectionView+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+LMProjectTools.h"; sourceTree = "<group>"; };
 		4620E72B1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+LMProjectTools.m"; sourceTree = "<group>"; };
 		4636DF451DD57FC3009E0830 /* LMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMFoundation.h; sourceTree = "<group>"; };
@@ -70,6 +78,20 @@
 		463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LMProjectTools.m"; sourceTree = "<group>"; };
 		463D66061DD9C84700AE4161 /* NSString+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LMProjectTools.h"; sourceTree = "<group>"; };
 		463D66071DD9C84700AE4161 /* NSString+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LMProjectTools.m"; sourceTree = "<group>"; };
+		46E375311E9E291700AA84A7 /* LMAutoLoadXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAutoLoadXibView.h; sourceTree = "<group>"; };
+		46E375321E9E291700AA84A7 /* LMAutoLoadXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAutoLoadXibView.m; sourceTree = "<group>"; };
+		46E375331E9E291700AA84A7 /* LMLoadXibHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoadXibHeader.h; sourceTree = "<group>"; };
+		46E375341E9E291700AA84A7 /* LMLoadXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoadXibView.h; sourceTree = "<group>"; };
+		46E375351E9E291700AA84A7 /* LMLoadXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoadXibView.m; sourceTree = "<group>"; };
+		46E375381E9E295100AA84A7 /* TestLoadXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestLoadXibView.h; path = ../TestLoadXibView.h; sourceTree = "<group>"; };
+		46E375391E9E295100AA84A7 /* TestLoadXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestLoadXibView.m; path = ../TestLoadXibView.m; sourceTree = "<group>"; };
+		46E3753B1E9E296300AA84A7 /* TestLoadXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestLoadXibView.xib; path = ../TestLoadXibView.xib; sourceTree = "<group>"; };
+		46E3753D1E9E2A1C00AA84A7 /* TestAutoLoadXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestAutoLoadXibView.h; path = ../TestAutoLoadXibView.h; sourceTree = "<group>"; };
+		46E3753E1E9E2A1C00AA84A7 /* TestAutoLoadXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestAutoLoadXibView.m; path = ../TestAutoLoadXibView.m; sourceTree = "<group>"; };
+		46E375401E9E2A2400AA84A7 /* TestAutoLoadXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestAutoLoadXibView.xib; path = ../TestAutoLoadXibView.xib; sourceTree = "<group>"; };
+		46E375441E9E2C3B00AA84A7 /* LMLoadXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoadXibViewController.h; sourceTree = "<group>"; };
+		46E375451E9E2C3B00AA84A7 /* LMLoadXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoadXibViewController.m; sourceTree = "<group>"; };
+		46E375461E9E2C3B00AA84A7 /* LMLoadXibViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMLoadXibViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,21 +125,15 @@
 		461BCF211DBE0FEA00F9E688 /* LMProjectToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				46E375421E9E2C1800AA84A7 /* Controller */,
+				46E375431E9E2C1800AA84A7 /* View */,
 				461BCF251DBE0FEA00F9E688 /* AppDelegate.h */,
 				461BCF261DBE0FEA00F9E688 /* AppDelegate.m */,
-				461BCF281DBE0FEA00F9E688 /* ViewController.h */,
-				461BCF291DBE0FEA00F9E688 /* ViewController.m */,
-				4620E71D1E6D0264009595C1 /* TestCell1.h */,
-				4620E71E1E6D0264009595C1 /* TestCell1.m */,
-				4620E71F1E6D0264009595C1 /* TestCell1.xib */,
 				461BCF2B1DBE0FEA00F9E688 /* Main.storyboard */,
 				461BCF2E1DBE0FEA00F9E688 /* Assets.xcassets */,
 				461BCF301DBE0FEA00F9E688 /* LaunchScreen.storyboard */,
 				461BCF331DBE0FEA00F9E688 /* Info.plist */,
 				461BCF221DBE0FEA00F9E688 /* Supporting Files */,
-				4620E7221E6D0F47009595C1 /* TestHead1.h */,
-				4620E7231E6D0F47009595C1 /* TestHead1.m */,
-				4620E7251E6D0F56009595C1 /* TestHead1.xib */,
 			);
 			path = LMProjectToolsDemo;
 			sourceTree = "<group>";
@@ -164,6 +180,7 @@
 		4636DF4E1DD57FC3009E0830 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				46E375301E9E291700AA84A7 /* LMAutoLoadXibView */,
 				4636DF5F1DD5BAE5009E0830 /* LMUIKit.h */,
 				4636DF4F1DD57FC3009E0830 /* UIView+LMProjectTools.h */,
 				4636DF501DD57FC3009E0830 /* UIView+LMProjectTools.m */,
@@ -175,6 +192,49 @@
 				4620E72B1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		46E375301E9E291700AA84A7 /* LMAutoLoadXibView */ = {
+			isa = PBXGroup;
+			children = (
+				46E375331E9E291700AA84A7 /* LMLoadXibHeader.h */,
+				46E375311E9E291700AA84A7 /* LMAutoLoadXibView.h */,
+				46E375321E9E291700AA84A7 /* LMAutoLoadXibView.m */,
+				46E375341E9E291700AA84A7 /* LMLoadXibView.h */,
+				46E375351E9E291700AA84A7 /* LMLoadXibView.m */,
+			);
+			path = LMAutoLoadXibView;
+			sourceTree = "<group>";
+		};
+		46E375421E9E2C1800AA84A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				461BCF281DBE0FEA00F9E688 /* ViewController.h */,
+				461BCF291DBE0FEA00F9E688 /* ViewController.m */,
+				46E375441E9E2C3B00AA84A7 /* LMLoadXibViewController.h */,
+				46E375451E9E2C3B00AA84A7 /* LMLoadXibViewController.m */,
+				46E375461E9E2C3B00AA84A7 /* LMLoadXibViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46E375431E9E2C1800AA84A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46E375381E9E295100AA84A7 /* TestLoadXibView.h */,
+				46E375391E9E295100AA84A7 /* TestLoadXibView.m */,
+				46E3753B1E9E296300AA84A7 /* TestLoadXibView.xib */,
+				46E3753D1E9E2A1C00AA84A7 /* TestAutoLoadXibView.h */,
+				46E3753E1E9E2A1C00AA84A7 /* TestAutoLoadXibView.m */,
+				46E375401E9E2A2400AA84A7 /* TestAutoLoadXibView.xib */,
+				4620E71D1E6D0264009595C1 /* TestCell1.h */,
+				4620E71E1E6D0264009595C1 /* TestCell1.m */,
+				4620E71F1E6D0264009595C1 /* TestCell1.xib */,
+				4620E7221E6D0F47009595C1 /* TestHead1.h */,
+				4620E7231E6D0F47009595C1 /* TestHead1.m */,
+				4620E7251E6D0F56009595C1 /* TestHead1.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,11 +297,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E375411E9E2A2400AA84A7 /* TestAutoLoadXibView.xib in Resources */,
 				461BCF321DBE0FEA00F9E688 /* LaunchScreen.storyboard in Resources */,
 				461BCF2F1DBE0FEA00F9E688 /* Assets.xcassets in Resources */,
+				46E3753C1E9E296300AA84A7 /* TestLoadXibView.xib in Resources */,
 				4620E7261E6D0F56009595C1 /* TestHead1.xib in Resources */,
 				461BCF2D1DBE0FEA00F9E688 /* Main.storyboard in Resources */,
 				4620E7211E6D0264009595C1 /* TestCell1.xib in Resources */,
+				46E375481E9E2C3B00AA84A7 /* LMLoadXibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +317,7 @@
 			files = (
 				4636DF5E1DD5BA2A009E0830 /* UIImage+LMProjectTools.m in Sources */,
 				4636DF531DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m in Sources */,
+				46E375371E9E291700AA84A7 /* LMLoadXibView.m in Sources */,
 				463D66051DD9B58F00AE4161 /* NSObject+LMProjectTools.m in Sources */,
 				463D66021DD9B4EB00AE4161 /* NSArray+LMProjectTools.m in Sources */,
 				461BCF2A1DBE0FEA00F9E688 /* ViewController.m in Sources */,
@@ -262,11 +326,15 @@
 				461BCF241DBE0FEA00F9E688 /* main.m in Sources */,
 				4620E71C1E6CFEA0009595C1 /* UITableView+LMProjectTools.m in Sources */,
 				4620E72C1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m in Sources */,
+				46E375471E9E2C3B00AA84A7 /* LMLoadXibViewController.m in Sources */,
 				4636DF541DD57FC3009E0830 /* UIView+LMProjectTools.m in Sources */,
+				46E3753A1E9E295100AA84A7 /* TestLoadXibView.m in Sources */,
 				463D66081DD9C84700AE4161 /* NSString+LMProjectTools.m in Sources */,
 				4620E7241E6D0F47009595C1 /* TestHead1.m in Sources */,
 				463D65FD1DD9ABA300AE4161 /* NSDictionary+LMProjectTools.m in Sources */,
+				46E375361E9E291700AA84A7 /* LMAutoLoadXibView.m in Sources */,
 				4620E7201E6D0264009595C1 /* TestCell1.m in Sources */,
+				46E3753F1E9E2A1C00AA84A7 /* TestAutoLoadXibView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
