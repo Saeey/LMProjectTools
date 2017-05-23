@@ -40,15 +40,15 @@
 @end
 
 CG_INLINE CGSize
-CGSizeGetRightHeight(NSString *string, UIFont *font, CGFloat width)
+CGSizeGetRightHeight(NSString *string, UIFont *font, CGFloat maxWidth)
 {
     UILabel *label      = [[UILabel alloc] init];
     label.text          = string;
     label.numberOfLines = 0;
     label.font          = font;
-    label.width         = width;
+    label.width         = maxWidth;
     [label sizeToFit];
-    label.width = width;
+    label.width = maxWidth;
     return label.size;
 }
 

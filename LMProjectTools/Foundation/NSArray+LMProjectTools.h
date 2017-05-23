@@ -10,6 +10,12 @@
 
 @interface NSArray (LMProjectTools)
 
+/**
+ 判断NSArray中是否包含某个元素，包含则返回YES
+
+ @param object 某个元素
+ @return 包含则返回YES
+ */
 - (BOOL)lm_haveObject:(id)object;
 
 @end

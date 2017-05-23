@@ -31,6 +31,7 @@
     btn.y           = 100;
     btn.width       = 80;
     btn.height      = 80;
+    
     btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
     NSLog(@"%f", btn.left);
@@ -42,7 +43,7 @@
     [btn setTitle:@"adfnhisfhbhsbdbsdbfdsdfjs" forState:UIControlStateNormal];
     
     btn.size = CGSizeGetRightHeight(btn.titleLabel.text, btn.titleLabel.font, 100);
-//    btn.size = CGSizeGetRightWidth(btn.titleLabel.text, btn.titleLabel.font, 1000);
+    btn.size = CGSizeGetRightWidth(btn.titleLabel.text, btn.titleLabel.font, 1000);
     
 
     
@@ -104,8 +105,6 @@
     
     // new
     TestCell1 *cell = [tableView lm_dequeueReusableCellWithClass:[TestCell1 class]];
-    // 不想复用的时候
-//    TestCell1 *cell = [[TestCell1 alloc] init];
     
     cell.titleLabel.text = [NSString stringWithFormat:@"哈哈我是第%ld行", (long)indexPath.row];
     switch (indexPath.row) {
