@@ -32,7 +32,7 @@
     btn.width       = 80;
     btn.height      = 80;
     
-    btn.backgroundColor = [UIColor redColor];
+    btn.backgroundColor = [UIColor colorWithHexString:@"#7498dd"];
     [self.view addSubview:btn];
     NSLog(@"%f", btn.left);
     [btn addTarget:self action:[self lm_selectorFromBlock:^{

@@ -54,4 +54,12 @@
     return nil;
 }
 
+- (BOOL)haveSubString:(NSString *)string {
+    if ([self rangeOfString:string].location == NSNotFound) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
+
 @end

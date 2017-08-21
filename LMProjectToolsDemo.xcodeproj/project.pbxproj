@@ -27,6 +27,7 @@
 		463D66021DD9B4EB00AE4161 /* NSArray+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66011DD9B4EB00AE4161 /* NSArray+LMProjectTools.m */; };
 		463D66051DD9B58F00AE4161 /* NSObject+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */; };
 		463D66081DD9C84700AE4161 /* NSString+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D66071DD9C84700AE4161 /* NSString+LMProjectTools.m */; };
+		4652F8DD1F4423B100770842 /* UIColor+LMProjectTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4652F8DC1F4423B100770842 /* UIColor+LMProjectTools.m */; };
 		46E375361E9E291700AA84A7 /* LMAutoLoadXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E375321E9E291700AA84A7 /* LMAutoLoadXibView.m */; };
 		46E375371E9E291700AA84A7 /* LMLoadXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E375351E9E291700AA84A7 /* LMLoadXibView.m */; };
 		46E3753A1E9E295100AA84A7 /* TestLoadXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E375391E9E295100AA84A7 /* TestLoadXibView.m */; };
@@ -78,6 +79,8 @@
 		463D66041DD9B58F00AE4161 /* NSObject+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LMProjectTools.m"; sourceTree = "<group>"; };
 		463D66061DD9C84700AE4161 /* NSString+LMProjectTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LMProjectTools.h"; sourceTree = "<group>"; };
 		463D66071DD9C84700AE4161 /* NSString+LMProjectTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LMProjectTools.m"; sourceTree = "<group>"; };
+		4652F8DB1F4423B100770842 /* UIColor+LMProjectTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LMProjectTools.h"; sourceTree = "<group>"; };
+		4652F8DC1F4423B100770842 /* UIColor+LMProjectTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LMProjectTools.m"; sourceTree = "<group>"; };
 		46E375311E9E291700AA84A7 /* LMAutoLoadXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAutoLoadXibView.h; sourceTree = "<group>"; };
 		46E375321E9E291700AA84A7 /* LMAutoLoadXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAutoLoadXibView.m; sourceTree = "<group>"; };
 		46E375331E9E291700AA84A7 /* LMLoadXibHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoadXibHeader.h; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				4620E71B1E6CFEA0009595C1 /* UITableView+LMProjectTools.m */,
 				4620E72A1E6D10C8009595C1 /* UICollectionView+LMProjectTools.h */,
 				4620E72B1E6D10C8009595C1 /* UICollectionView+LMProjectTools.m */,
+				4652F8DB1F4423B100770842 /* UIColor+LMProjectTools.h */,
+				4652F8DC1F4423B100770842 /* UIColor+LMProjectTools.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -268,9 +273,9 @@
 				TargetAttributes = {
 					461BCF1E1DBE0FEA00F9E688 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 9479286Y6M;
+						DevelopmentTeam = RSS58UZ4J5;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -319,6 +324,7 @@
 				4636DF531DD57FC3009E0830 /* NSMutableDictionary+LMProjectTools.m in Sources */,
 				46E375371E9E291700AA84A7 /* LMLoadXibView.m in Sources */,
 				463D66051DD9B58F00AE4161 /* NSObject+LMProjectTools.m in Sources */,
+				4652F8DD1F4423B100770842 /* UIColor+LMProjectTools.m in Sources */,
 				463D66021DD9B4EB00AE4161 /* NSArray+LMProjectTools.m in Sources */,
 				461BCF2A1DBE0FEA00F9E688 /* ViewController.m in Sources */,
 				4636DF521DD57FC3009E0830 /* NSMutableArray+LMProjectTools.m in Sources */,
@@ -456,17 +462,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 604493843@qq.com (6NH4524XR6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9479286Y6M;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ailing xing (2ABJCUADFU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ailing xing (2ABJCUADFU)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = RSS58UZ4J5;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LMProjectToolsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.visionet.LM.LMProjectToolsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.visionet.LMProjectToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e1753f8-aacc-43d7-a6a4-b51fef789825";
+				PROVISIONING_PROFILE_SPECIFIER = tj_dev;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -475,17 +484,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 604493843@qq.com (6NH4524XR6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9479286Y6M;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ailing xing (2ABJCUADFU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ailing xing (2ABJCUADFU)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = RSS58UZ4J5;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LMProjectToolsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.visionet.LM.LMProjectToolsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.visionet.LMProjectToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e1753f8-aacc-43d7-a6a4-b51fef789825";
+				PROVISIONING_PROFILE_SPECIFIER = tj_dev;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -45,4 +45,6 @@
  */
 - (NSDictionary *)JSONDictionary;
 
+- (BOOL)haveSubString:(NSString *)string;
+
 @end
